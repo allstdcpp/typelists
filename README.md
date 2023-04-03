@@ -10,7 +10,7 @@ A test suite is provided should you wish to run the tests before including into 
 The functions provided with the library are:
 
 |   Function   |   Description   |   Header   |
-|   all_of     |   This function checks whether all types provided in a template parameter pack satisy the supplied predicate   |  typelists/all_of.hpp   
+|   all_of     |   This function checks whether all types provided in a template parameter pack satisy the supplied predicate   |  typelists/all_of.hpp |   
 
 
 
