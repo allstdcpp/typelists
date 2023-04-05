@@ -8,6 +8,9 @@ namespace typelists {
     template<typename... Ts>
     struct unique;
 
+    template<>
+    struct unique<> : std::true_type {};
+
     template<typename T>
     struct unique<T> : std::true_type {};
 
