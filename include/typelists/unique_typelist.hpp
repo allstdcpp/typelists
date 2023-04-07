@@ -11,6 +11,9 @@ namespace typelists {
     template<template<typename...> typename TList>
     struct unique_typelist<TList<>> : std::true_type {};
 
+    template<template<typename ...> typename TList, typename T>
+    struct unique_typelist<TList<T>> : std::true_type{};
+
     template<template<typename ...> typename TList, typename T, typename... Ts>
     struct unique_typelist<TList<T, T, Ts...>> : std::false_type{};
 
